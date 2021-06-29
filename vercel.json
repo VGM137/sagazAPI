@@ -1,0 +1,22 @@
+{
+  "name": "platzivideo",
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "env": {
+    "SAGAZ_DB_USER": "@sagaz-db-user",
+    "SAGAZ_DB_PASSWORD": "@sagaz-db-password",
+    "SAGAZ_DB_HOST": "@sagaz-db-host",
+    "SAGAZ_DB_NAME": "@sagaz-db-name"
+  }
+}
