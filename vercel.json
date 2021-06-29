@@ -14,9 +14,9 @@
     }
   ],
   "env": {
-    "SAGAZ_DB_USER": "@sagaz-db-user",
-    "SAGAZ_DB_PASSWORD": "@sagaz-db-password",
-    "SAGAZ_DB_HOST": "@sagaz-db-host",
-    "SAGAZ_DB_NAME": "@sagaz-db-name"
+    "DB_USER": "@sagaz-db-user",
+    "DB_PASSWORD": "@sagaz-db-password",
+    "DB_HOST": "@sagaz-db-host",
+    "DB_NAME": "@sagaz-db-name"
   }
 }
