@@ -31,11 +31,6 @@ constructor(){
     const deletedGuisadoId = await this.mongoDB.delete(this.collection, guisadoId);
     return deletedGuisadoId;
   }
-
-/*   async patchGuisado(){
-    const patchedGuisadoId = await Promise.resolve(guisadoMock[0].id);
-    return patchedGuisadoId;
-  } */
 }
 
 module.exports = { GuisadosService };

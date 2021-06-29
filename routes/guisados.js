@@ -94,19 +94,6 @@ function guisadosApi(app) {
     }
   });
 
-  router.patch("/:guisadoId", async function(req, res, next){
-    const { guisadoId } = req.params;
-    
-    try{
-      const pacthGuisadoId = await guisadosService.deleteGuisado({ guisadoId });
-      res.status(200).json({
-        data: pacthGuisadoId,
-        message: 'guisado partially updated'
-      });
-    }catch(err){
-      next(err)
-    }
-  });
 }
 
 module.exports = guisadosApi;
