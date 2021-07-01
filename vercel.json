@@ -14,8 +14,7 @@
     }
   ],
   "headers": [
-    { "key": "Access-Control-Allow-Credentials", "http://localhost:8080/guisado": "true" },
-    { "key": "Access-Control-Allow-Credentials", "http://www.tacosagaz.com/guisado": "true" }
+    { "key": "Access-Control-Allow-Credentials", "http://localhost:8080/guisado": "true" }
   ],
   "env": {
     "DB_USER": "@sagaz-db-user",
