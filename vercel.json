@@ -13,7 +13,12 @@
       "dest": "/index.js"
     }
   ],
-  
+  "github": {
+    "enabled": true
+  },
+  "headers": [
+    { "key": "Access-Control-Allow-Credentials", "http://localhost:8080/guisado": "true" }
+  ],
   "env": {
     "DB_USER": "@sagaz-db-user",
     "DB_PASSWORD": "@sagaz-db-password",
