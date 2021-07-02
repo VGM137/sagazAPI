@@ -36,7 +36,7 @@ function guisadosApi(app) {
     }
   });
 
-  router.get("/:guisadoId", validationHandler({ guisadoId: guisadosIdSchema }, 'params'), async function(req, res, next){
+  router.get("/:guisadoId", corsHandler(), validationHandler({ guisadoId: guisadosIdSchema }, 'params'), async function(req, res, next){
     cacheRespose(res, SIXTY_MINUTES_IN_SECONDS);
     const { guisadoId } = req.params;
 
