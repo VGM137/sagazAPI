@@ -4,7 +4,7 @@ const cors = require('cors');
 function corsHandler() {
   console.log('This is CORS')
   const configCors = {
-    origin: "http://localhost:8080"
+    origin: "http://localhost:8080/guisados"
   }
   if (config.dev) {
     console.log('This is CORS dev')
